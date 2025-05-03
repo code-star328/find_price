@@ -35,10 +35,7 @@ let browser;
                 '--no-first-run',
                 '--no-zygote',
                 '--single-process'
-            ],
-            executablePath: process.env.NODE_ENV === 'production' 
-                ? '/usr/bin/google-chrome-stable'
-                : undefined
+            ]
         });
         console.log('Browser instance created successfully');
     } catch (error) {
